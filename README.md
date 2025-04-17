@@ -5,29 +5,29 @@ This project is a real-time WebSocket-based system built using FastAPI for the b
 ---
 
 ## Project Structure
-
-Project/
-│
-├── app/
-│   ├── main.py             # FastAPI entry point
-│   ├── server.py           # Handles WebSocket logic for the server dashboard
-│   ├── client.py           # Handles WebSocket logic for client subscribers
-│   └── shared_tools.py     # Shared utilities for managing WebSocket connections
-│
-├── pages/
-│   ├── client.html         # Client UI (subscriber interface)
-│   ├── server.html         # Server UI (dashboard to view counts/messages)
-│   ├── css/
-│   │   ├── client.css      # Styling for client UI
-│   │   └── server.css      # Styling for server UI
-│   ├── js/
-│   │   ├── client.js       # JavaScript for client-side WebSocket handling
-│   │   └── server.js       # JavaScript for server-side WebSocket handling
-│   └── images/
-│       └── Server Background.png  # Optional background image
-│
-└── README.md               # Project documentation
-
+   ```bash
+    Project/
+    │
+    ├── app/
+    │   ├── main.py             # FastAPI entry point
+    │   ├── server.py           # Handles WebSocket logic for the server dashboard
+    │   ├── client.py           # Handles WebSocket logic for client subscribers
+    │   └── shared_tools.py     # Shared utilities for managing WebSocket connections
+    │
+    ├── pages/
+    │   ├── client.html         # Client UI (subscriber interface)
+    │   ├── server.html         # Server UI (dashboard to view counts/messages)
+    │   ├── css/
+    │   │   ├── client.css      # Styling for client UI
+    │   │   └── server.css      # Styling for server UI
+    │   ├── js/
+    │   │   ├── client.js       # JavaScript for client-side WebSocket handling
+    │   │   └── server.js       # JavaScript for server-side WebSocket handling
+    │   └── images/
+    │       └── Server Background.png  # Optional background image
+    │
+    └── README.md               # Project documentation
+  ```
 ---
 
 ## Features
@@ -48,20 +48,22 @@ Project/
 
 Install dependencies:
 
-pip install fastapi uvicorn
+  ```bash
+  pip install fastapi uvicorn
+  ```
 
 ---
 
 ## Running the Project
 
 1. Navigate to the project directory:
-
-cd Project
-
+  ```bash
+    cd Project
+  ```
 2. Start the FastAPI server:
-
-python -m uvicorn app.main:app --reload
-
+  ```bash
+    python -m uvicorn app.main:app --reload
+  ```
 3. Open your browser and visit:
 
 - Server Dashboard: http://127.0.0.1:8000/server  
